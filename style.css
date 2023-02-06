@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+:root{
+  --main-color:#3a6cf4;
+  --hover-color:#0a49c9;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  padding: 10px 100px;
+}
+header .logo {
+  color: var(--main-color);
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a{
+  color: var(--main-color);
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+  text-decoration: none;
+}
+nav a:hover{
+  color: var(--hover-color);
+}
+
+section{
+  padding: 100px 200px;
+
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/images.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main h2{
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: left;
+}
+.main h2 span {
+  color: var(--main-color);
+  font-size: 3em;
+  margin-top: 10px;
+  font-weight: 800;
+}
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.main .Main-btn{
+  color: #fff;
+  padding: 0.9375em 2.1875em;
+  width: fit-content;
+  background-color: var(--main-color);
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  display: inline-block;
+  transition: .5s ease;
+}
+.main .Main-btn:hover {
+  background-color: #0a49f6;
+  transform: scale(1.1);
+}
+.main .social-icon a {
+  color: white;
+  font-size: 1.1em;
+  padding-right: 30px;
+}
+.services{
+  width: 100%;
+  background-color: white;
+}
+section h2 {
+  color: var(--main-color);
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 800;
+}
+.services .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 30px;
+}
+.services .box {
+  padding: 25px;
+  box-shadow: 0 5px 25px 0px rgba(1 1 1 / 15%);
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: .7s ease;
+}
+.services .box:hover{
+  transform: scale(1.1);
+}
+.services .box a {
+  color: var(--main-color);
+  font-size: 8em;
+  display: block;
+  text-align: center;
+}
+.services .box .info span {
+  color: var(--main-color);
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+.services .box .info p {
+  color: #777;
+  text-align: center;
+}
+.projects {
+  background-color: #000016;
+}
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  gap: 40px;
+}
+.projects .cards .box {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid white;
+  transition: .7s ease;
+}
+.projects .cards .box:hover {
+  transform: scale(1.1);
+}
+.projects .cards .box img {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.projects .cards .box .info span{
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 3;
+}
+.projects .cards .box .more {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+}
+.projects .cards .box .more p{
+  font-weight: bold !important;
+}
+.projects .cards .box .more a {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.projects .cards .box .more a:hover {
+  color: var(--hover-color);
+}
+.contact .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+.contact .cards .box{
+  box-shadow: 0 5px 25px 0 rgba(1 1 1 / 15%);
+  padding: 15px;
+  width: 400px;
+  margin: auto auto;
+  transition: .7s ease;
+  border-radius: 15px;
+}
+.contact .cards .box:hover {
+  transform: scale(1.1);
+}
+.contact .cards .box a {
+  font-size: 8em;
+  color: var(--main-color);
+  text-align: center;
+  display: block;
+}
+.contact .cards .box p {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.contact .cards .box span {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+footer {
+  background-color: #000016;
+  padding: 20px;
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .info .left span:first-child{
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+footer .info .left span:last-child{
+    color: var(--main-color);
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+footer .info .right a{
+  font-size: 1.1em;
+  margin-right: 20px;
+  color: white;
+}
+
+@media (max-width: 767px){
+  header {
+    padding: 5px 40px;
+  }
+  .main {
+    text-align: center;
+  }
+  .main h2 {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .main h2 span {
+    font-size: 2em;
+  }
+  .main h3 {
+    font-size: 1.2em;
+  }
+  .projects .cards {
+    margin-left: -  30px;
+  }
+}
+@media (min-width: 768px){
+  .main {
+    text-align: center;
+  }
+  .main h2 {
+    text-align: center;
+  }
+  .main h2 span {
+    font-size: 2em;
+  }
+  .media {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 1191px) {
+  .main {
+    text-align: left;
+  }
+  .main h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    padding: 3px 20px;
+  }
+  header .logo {
+    font-size: 1em;
+  }
+  nav a {
+    font-size: .7em;
+  }
+  section {
+    padding: 0;
+  }
+  .media {
+    margin-left: 35px;
+  }
+  .services h2 {
+    margin-top: 20px;
+  }
+  .services .box {
+    padding: 15px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+  }
+  .services .box:last-child {
+    margin-bottom: 40px;
+  }
+  .projects h2 {
+    padding: 20px 20px 0;
+  }
+  .projects .box {
+    padding: 15px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+  }
+  .projects .box:last-child {
+    margin-bottom: 30px;
+  }
+  .contact h2 {
+    padding: 20px 20px 0;
+  }
+  .contact .cards .box {
+    padding: 15px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+  }
+  .contact .cards .box:last-child {
+    margin-bottom:30px;
+  }
+  footer {
+    padding: 5px;
+  }
+  footer .info .left {
+    font-size: 1.1em;
+  }
+  footer .info .right {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    padding: 10px 10px;
+  }
+  .media {
+    margin-left: 10px;
+  }
+  .projects .cards {
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    gap: 40px;
+  }
+  .projects .box {
+    margin-left: 27px;
+  }
+  .contact .cards .box {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+  }
+  footer .info .left span:last-child {
+    font-size: 1.1em;
+  }
+}
